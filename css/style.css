@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background-color: green;
+    /* background: url("../images/0001.jpg"); */
+    background-size: 200px;
+    min-height:100vh;
+}
+
+.mrg-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gameContainer{
+    /* don't use px, try to use vmin and vmax */
+    height: 74vmin;
+    width: 74vmin;
+    border: 1px solid black;
+    background: linear-gradient(lightgreen, white);
+    margin-top: 11vmin;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
