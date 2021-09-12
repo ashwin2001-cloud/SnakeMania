@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
 body{
     margin: 0;
     background-color: green;
     /* background: url("../images/0001.jpg"); */
-    background-size: 200px;
-    min-height:100vh;
+    min-height:88vh;
+    font-family: 'Azeret Mono', monospace;
+    font-size:10px;
 }
 
 .mrg-auto{
     margin-left: auto;
     margin-right: auto;
+}
+
+#gameContainer{
+    display: flex;
+}
+
+#scoreContainer{
+    height: 20vmin;
+    width: 40vmin;
+    margin-top: 11vmin;
+    margin-right: 14vmin;
 }
 
 #board{
@@ -21,17 +35,24 @@ body{
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
+    margin-left:70vmin;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .food{
-    background-color: purple;
+    background: linear-gradient(gold, goldenrod);;
+    border: 1px solid black;
+    border-radius: 11px;
 }
 
 .head{
-    background-color: red;
+    background: linear-gradient(red, orange);
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 .snake{
-    background-color: yellow;
+    background-color: purple;
+    border: 1px solid white;
+    border-radius: 8px;
 }
