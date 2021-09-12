@@ -11,7 +11,7 @@ body{
     margin-right: auto;
 }
 
-#gameContainer{
+#board{
     /* don't use px, try to use vmin and vmax */
     height: 74vmin;
     width: 74vmin;
@@ -22,4 +22,16 @@ body{
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.food{
+    background-color: purple;
+}
+
+.head{
+    background-color: red;
+}
+
+.snake{
+    background-color: yellow;
 }
